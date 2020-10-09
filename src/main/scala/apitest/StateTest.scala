@@ -25,7 +25,7 @@ object StateTest {
     //    env.setStateBackend(new FsStateBackend(""))
 //        env.setStateBackend(new RocksDBStateBackend(""))
         env.enableCheckpointing(1000L)
-    //    env.getCheckpointConfig.setCheckpointingMode(CheckpointingMode.AT_LEAST_ONCE)
+        env.getCheckpointConfig.setCheckpointingMode(CheckpointingMode.AT_LEAST_ONCE)
     //    env.getCheckpointConfig.setCheckpointTimeout(60000L)
           //设置checkpoint最大并发数
     //    env.getCheckpointConfig.setMaxConcurrentCheckpoints(1)
